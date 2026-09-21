@@ -1,0 +1,4 @@
+RewriteEngine On
+RewriteCond %{HTTP_HOST} !^www\. [NC,OR]
+RewriteCond %{THE_REQUEST} \s/+index\.html[\s?] [NC]
+RewriteRule ^(.*)$ https://www.landtmaladeast.com/ [L,R=301]

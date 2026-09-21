@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Terms and Conditions | Malad Estate</title>
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="theme-color" content="#101114" />
+  <link rel="icon" href="downloadfev.png" type="image/png" />
+
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=DM+Serif+Display&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --black: #101114;
+      --ink: #17191e;
+      --white: #fff;
+      --soft: #ece7de;
+      --grey: #4a4f5a;
+      --line: #ded8cd;
+      --gold: #b89049;
+      --gold2: #d8bd81;
+      --max: 1260px;
+      --shadow: 0 18px 48px rgba(16, 17, 20, .08);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--soft);
+      color: var(--ink);
+      line-height: 1.6;
+    }
+
+    a { text-decoration: none; color: inherit; }
+    img { max-width: 100%; display: block; }
+
+    .container {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .serif, h1, h2, h3 {
+      font-family: "DM Serif Display", serif;
+      font-weight: 400;
+      line-height: 1.05;
+    }
+
+    h1 {
+      font-size: clamp(36px, 7.4vw, 48px);
+      letter-spacing: -0.045em;
+    }
+
+    h2 {
+      font-size: clamp(24px, 4.5vw, 34px);
+      letter-spacing: -0.035em;
+      margin-top: 48px;
+      margin-bottom: 16px;
+    }
+
+    h3 {
+      font-size: 22px;
+      font-family: 'Inter', sans-serif;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+    }
+
+    p {
+      margin: 0 0 20px;
+      color: #2a2d34;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      color: var(--gold);
+    }
+
+    .eyebrow:before {
+      content: "";
+      width: 28px;
+      height: 1px;
+      background: currentColor;
+    }
+
+    .btn {
+      min-height: 44px;
+      padding: 0 28px;
+      border: 1px solid transparent;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      cursor: pointer;
+      font-weight: 700;
+      transition: .25s;
+      border-radius: 8px;
+      width: fit-content;
+      font-size: 14px;
+    }
+
+    .btn-gold {
+      background: var(--gold);
+      color: #111;
+      border: 1px solid var(--gold);
+    }
+
+    .btn-gold:hover {
+      background: var(--gold2);
+      border-color: var(--gold2);
+      transform: translateY(-2px);
+      box-shadow: 0 10px 24px rgba(184, 144, 73, 0.2);
+    }
+
+    .btn-outline-light {
+      border-color: rgba(255,255,255,.3);
+      color: #fff;
+      background: rgba(255,255,255,.04);
+    }
+
+    .section { padding: 60px 0; }
+
+    /* ----- HEADER ----- */
+    .header {
+      position: sticky;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 60;
+      background: rgba(16, 17, 20, .88);
+      backdrop-filter: blur(18px);
+      border-bottom: 1px solid rgba(255,255,255,.06);
+    }
+
+    .nav {
+      height: 74px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: white;
+    }
+
+    .brand img { width: 180px; height: auto; }
+
+    .navlinks {
+      display: flex;
+      gap: 24px;
+      font-size: 13px;
+      color: rgba(255,255,255,.7);
+    }
+
+    .navlinks a:hover { color: #fff; }
+
+    .navactions { display: flex; gap: 8px; }
+
+    .hamburger {
+      display: none;
+      background: none;
+      border: none;
+      padding: 5px;
+      cursor: pointer;
+      width: 40px;
+      height: 40px;
+      flex-direction: column;
+      justify-content: center;
+      gap: 5px;
+      z-index: 1001;
+    }
+
+    .hamburger span {
+      display: block;
+      width: 26px;
+      height: 2px;
+      background: white;
+      transition: 0.3s ease;
+    }
+
+    /* ----- BLOG ARTICLE (clean, premium) ----- */
+    .blog-article {
+      padding: 64px 0 40px;
+      background: var(--soft);
+    }
+
+    .blog-header {
+      text-align: center;
+      margin-bottom: 48px;
+    }
+
+    .blog-header h1 {
+      color: var(--black);
+      margin: 16px 0 12px;
+    }
+
+    .blog-header .meta {
+      color: var(--grey);
+      font-size: 0.9rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      letter-spacing: 0.01em;
+    }
+
+    .blog-content {
+      max-width: 1000px;
+      margin: 0 auto;
+      background: #fff;
+      padding: 56px 64px;
+      border-radius: 20px;
+      box-shadow: var(--shadow);
+      border: 1px solid var(--line);
+    }
+
+    .blog-content p {
+      font-size: 16px;
+      line-height: 1.8;
+      color: #1f2229;
+    }
+
+    .blog-content strong {
+      color: var(--black);
+      font-weight: 600;
+    }
+
+    .blog-content ul {
+      margin: 16px 0 24px 24px;
+    }
+
+    .blog-content ul li {
+      list-style: disc;
+      margin-bottom: 8px;
+      line-height: 1.7;
+      color: #1f2229;
+    }
+
+    .blog-content img {
+      width: 100%;
+      border-radius: 16px;
+      margin: 32px 0 28px;
+      box-shadow: 0 12px 32px rgba(0,0,0,0.06);
+    }
+
+    /* — policy items: clean, no background box — */
+    .policy-item {
+      padding: 8px 0 16px;
+      border-bottom: 1px solid rgba(0,0,0,0.04);
+      margin-bottom: 20px;
+    }
+
+    .policy-item:last-of-type {
+      border-bottom: none;
+      margin-bottom: 0;
+    }
+
+    .policy-item h3 {
+      font-size: 1.3rem;
+      margin-bottom: 6px;
+      color: var(--black);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .policy-item p {
+      margin-bottom: 4px;
+      font-size: 15px;
+    }
+
+    .policy-item ul {
+      margin: 8px 0 0 20px;
+    }
+
+    .policy-item ul li {
+      font-size: 14px;
+    }
+
+    .highlight-block {
+      background: var(--soft);
+      padding: 28px 36px;
+      border-radius: 16px;
+      margin: 40px 0 32px;
+      border-left: 6px solid var(--gold);
+    }
+
+    .highlight-block strong {
+      color: var(--black);
+    }
+
+    /* ---- FOOTER ---- */
+    .footer {
+      background: var(--black);
+      color: rgba(255,255,255,.5);
+      padding: 48px 0 36px;
+      font-size: 12px;
+      border-top: 1px solid rgba(255,255,255,.06);
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.2fr .8fr .8fr .8fr;
+      gap: 30px;
+      padding-bottom: 28px;
+      border-bottom: 1px solid rgba(255,255,255,.08);
+      margin-bottom: 20px;
+    }
+
+    .footer h4 {
+      color: white;
+      font-family: 'Inter', sans-serif;
+      font-size: 13px;
+      margin: 0 0 10px;
+      font-weight: 700;
+    }
+
+    .footer a {
+      display: block;
+      margin: 5px 0;
+      color: rgba(255,255,255,.5);
+      transition: color 0.2s;
+    }
+
+    .footer a:hover { color: var(--gold2); }
+
+    .footer .btn-gold {
+      margin-top: 8px;
+      display: inline-block;
+      padding: 0 24px;
+      min-height: 38px;
+      font-size: 12px;
+    }
+
+    .footer-disclaimer p {
+      font-size: 10px;
+      line-height: 1.8;
+      color: rgba(255,255,255,.35);
+      text-align: justify;
+    }
+
+    .footer-disclaimer strong { color: var(--gold2); }
+
+    /* ---- MOBILE FLOATING ACTION BAR (Call & WhatsApp) ---- */
+    .mobile-actions {
+      display: none;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      backdrop-filter: blur(12px);
+      padding: 10px 16px;
+      gap: 12px;
+      justify-content: center;
+      align-items: center;
+      border-top: 1px solid rgba(255,255,255,0.08);
+      z-index: 999;
+      box-shadow: 0 -6px 20px rgba(0,0,0,0.3);
+      background: rgba(16, 17, 20, 0.95);
+    }
+
+    .mobile-actions .btn {
+      flex: 1;
+      min-height: 48px;
+      border-radius: 40px;
+      font-size: 14px;
+      font-weight: 700;
+      justify-content: center;
+      padding: 0 12px;
+    }
+
+    .mobile-actions .btn-call {
+      background: #25D366;
+      border: none;
+      color: #fff;
+    }
+
+    .mobile-actions .btn-call i {
+      margin-right: 8px;
+    }
+
+    .mobile-actions .btn-wa {
+      background: #25D366;
+      border: none;
+      color: #fff;
+    }
+
+    .mobile-actions .btn-wa i {
+      margin-right: 8px;
+    }
+
+    /* ---- RESPONSIVE ---- */
+    @media (max-width: 1024px) {
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+    }
+
+    @media (max-width: 768px) {
+      .hamburger { display: flex; }
+
+      .navlinks {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: #fff;
+        flex-direction: column;
+        padding: 16px 0;
+        box-shadow: 0 12px 30px rgba(0,0,0,0.1);
+        z-index: 1000;
+        color: var(--black);
+      }
+
+      .navlinks.active { display: flex; }
+      .navlinks a {
+        width: 100%;
+        padding: 12px 24px;
+        border-bottom: 1px solid #eee;
+        color: var(--black);
+      }
+
+      .hamburger.active span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+      .hamburger.active span:nth-child(2) { opacity: 0; }
+      .hamburger.active span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+      .blog-content { padding: 32px 24px; }
+      .blog-header h1 { font-size: 2rem; }
+
+      .footer-grid { grid-template-columns: 1fr; }
+      .brand img { width: 140px; }
+
+      .mobile-actions {
+        display: flex !important;
+      }
+
+      /*body {*/
+      /*  padding-bottom: 80px;*/
+      /*}*/
+    }
+
+    @media (max-width: 480px) {
+      .blog-content { padding: 20px 16px; }
+      .highlight-block { padding: 20px; }
+    }
+  </style>
+</head>
+<body>
+
+<header class="header">
+  <div class="container nav">
+    <a class="brand" href="/"><img src="malad logo (1).png" alt="Malad Estate" /></a>
+    <button class="hamburger" id="hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+    <div id="navlinks" class="navlinks">
+      <a href="#">Overview</a>
+      <a href="#">Price</a>
+      <a href="#">Floor Plans</a>
+      <a href="#">Amenities</a>
+      <a href="#">Location</a>
+      <a href="#">Gallery</a>
+      <a href="#">RERA</a>
+    </div>
+    <div class="navactions">
+      <a class="btn btn-gold" href="tel:+916366850754">+91 6366850754</a>
+    </div>
+  </div>
+</header>
+
+<section class="blog-article">
+  <div class="container">
+    <div class="blog-header">
+      <div class="eyebrow">Terms and Conditions</div>
+      <h1>Terms and Conditions</h1>
+      <div class="meta">
+        <span>Last Updated: 25 August 2026</span>
+      </div>
+    </div>
+
+    <div class="blog-content">
+      <p>Welcome to Malad Estate. By accessing or using this website, you agree to comply with the following Terms and Conditions. Please read these terms carefully before using the website or submitting any enquiry.</p>
+
+      <!-- Section: Website Purpose -->
+      <div class="policy-item">
+        <h3>Website Purpose</h3>
+        <p>This website is created to provide general information about residential real estate projects, including project details, configurations, amenities, location information, pricing, specifications, and related property information.</p>
+        <p>The information available on this website is provided for informational and marketing purposes only and should not be considered a legally binding offer, commitment, or guarantee of property sale.</p>
+      </div>
+
+      <!-- Section: Property Information -->
+      <div class="policy-item">
+        <h3>Property Information</h3>
+        <p>We make reasonable efforts to ensure that the information published on this website is accurate and updated. However, project specifications, carpet areas, floor plans, amenities, prices, payment plans, possession timelines, availability, and other details may change without prior notice.</p>
+        <p>Property images, illustrations, floor plans, renders, photographs, and other visual materials are for representational purposes only and may differ from the actual property.</p>
+        <p>Visitors are advised to independently verify all project-related information with the respective developer or authorized representatives before making any investment or purchase decision.</p>
+      </div>
+
+      <!-- Section: Pricing and Availability -->
+      <div class="policy-item">
+        <h3>Pricing and Availability</h3>
+        <p>All prices displayed on the website are subject to change without prior notice. Any price mentioned on the website should not be treated as a final offer or quotation.</p>
+        <p>Property availability is subject to inventory and confirmation from the respective developer or property owner. We do not guarantee that a particular unit, configuration, price, or offer will remain available when an enquiry is received.</p>
+      </div>
+
+      <!-- Section: Enquiries and Communication -->
+      <div class="policy-item">
+        <h3>Enquiries and Communication</h3>
+        <p>When you submit your contact information through the website, you authorize us or our authorized representatives to contact you regarding your enquiry.</p>
+        <p>Communication may be made through phone calls, SMS, WhatsApp, or email. You may receive information regarding properties, site visits, offers, pricing, availability, and related real estate services.</p>
+      </div>
+
+      <!-- Section: Third-Party Developers -->
+      <div class="policy-item">
+        <h3>Third-Party Developers</h3>
+        <p>This website may provide information relating to projects developed or marketed by third-party developers or property owners. The respective developer or property owner remains responsible for the project-specific information, approvals, construction, possession, amenities, specifications, and contractual obligations.</p>
+        <p>Users should verify the relevant project information and applicable RERA registration details before entering into any transaction.</p>
+      </div>
+
+      <!-- Section: Intellectual Property -->
+      <div class="policy-item">
+        <h3>Intellectual Property</h3>
+        <p>All website content, including text, graphics, logos, designs, images, layouts, and other materials, is protected by applicable intellectual property laws unless otherwise stated.</p>
+        <p>Unauthorized copying, reproduction, modification, distribution, publication, or commercial use of website content is prohibited without prior written permission.</p>
+      </div>
+
+      <!-- Section: Limitation of Liability -->
+      <div class="policy-item">
+        <h3>Limitation of Liability</h3>
+        <p>We shall not be responsible for any direct or indirect loss arising from reliance on information published on this website, including changes in pricing, availability, project specifications, timelines, approvals, or other project-related information.</p>
+        <p>Users are responsible for conducting their own due diligence before making any property-related decision.</p>
+      </div>
+
+      <!-- Section: Website Availability -->
+      <div class="policy-item">
+        <h3>Website Availability</h3>
+        <p>We do not guarantee that the website will always be available, error-free, uninterrupted, or free from technical issues. We reserve the right to modify, suspend, or discontinue any part of the website without prior notice.</p>
+      </div>
+
+      <!-- Section: Changes to These Terms -->
+      <div class="policy-item">
+        <h3>Changes to These Terms</h3>
+        <p>These Terms and Conditions may be updated periodically. Continued use of the website after changes are published will constitute acceptance of the revised terms.</p>
+      </div>
+
+      <!-- Section: Contact Information -->
+      <div class="policy-item">
+        <h3>Contact Information</h3>
+        <p>For questions regarding these Terms and Conditions or the information provided on this website, please contact us using the contact details available on the website.</p>
+      </div>
+
+      <div class="highlight-block">
+        <strong>Agent RERA No.:</strong> PRM/KA/RERA/1251/310/AG/241022/005199<br />
+        <strong>Site Address:</strong> Malad Estate, Maharashtra<br /><br />
+        By accessing and using this website, you acknowledge that you have read, understood, and agreed to these Terms and Conditions.
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-disclaimer">
+      <p><strong>Disclaimer:</strong> This microsite is intended for informational and marketing purposes only and is operated by an independent real estate consultant / channel partner. It is not the official website of L&T Realty unless expressly stated. Project names, logos, images, specifications, amenities, plans, prices, offers, possession timelines, floor counts and other details are indicative and may change without notice. Buyers should independently verify all information, RERA registration details, carpet areas, taxes, charges, plans, payment schedules and specifications directly with the promoter and the relevant RERA authority before making any purchase decision.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- MOBILE FLOATING ACTION BAR (Call & WhatsApp) -->
+<!--<div class="mobile-actions" id="mobileActions">-->
+<!--  <a href="tel:+916366850754" class="btn btn-call"><i class="fas fa-phone-alt"></i> Call</a>-->
+<!--  <a href="https://wa.me/916366850754" target="_blank" class="btn btn-wa"><i class="fab fa-whatsapp"></i> WhatsApp</a>-->
+<!--</div>-->
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const hamburger = document.getElementById("hamburger");
+    const navlinks = document.getElementById("navlinks");
+
+    hamburger.addEventListener("click", function() {
+      hamburger.classList.toggle("active");
+      navlinks.classList.toggle("active");
+    });
+
+    document.querySelectorAll("#navlinks a").forEach(function(link) {
+      link.addEventListener("click", function() {
+        hamburger.classList.remove("active");
+        navlinks.classList.remove("active");
+      });
+    });
+  });
+</script>
+
+</body>
+</html>
